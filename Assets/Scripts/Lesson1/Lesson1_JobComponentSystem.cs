@@ -4,6 +4,7 @@ using Unity.Jobs;
 
 namespace Lesson1
 {
+	[DisableAutoCreation]
 	public class MultiCountSystem : JobComponentSystem
 	{
 		[BurstCompile]

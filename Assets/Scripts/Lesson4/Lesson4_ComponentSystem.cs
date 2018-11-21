@@ -2,6 +2,7 @@
 
 namespace Lesson4
 {
+    [DisableAutoCreation]
     sealed class DisplaySystem : ComponentSystem
     {
         public UnityEngine.UI.Text MessageText;

@@ -6,6 +6,7 @@ using Unity.Collections.LowLevel.Unsafe;
 
 namespace Lesson4
 {
+	[DisableAutoCreation]
 	struct CreateDummyDataJob : IJob
 	{
 		public ExclusiveEntityTransaction commands;

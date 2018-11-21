@@ -3,6 +3,7 @@
 namespace Lesson3
 {
 	[UpdateBefore(typeof(Lesson3Group_1))]
+    [DisableAutoCreation]
 	sealed class EndFrameBarrierSystem : BarrierSystem
 	{		
 	}
@@ -15,6 +16,7 @@ namespace Lesson3
 
 #region Lesson3Group_1
 	[UpdateInGroup(typeof(Lesson3Group_1))]
+    [DisableAutoCreation]
     sealed class ConsumptionSystem : ComponentSystem
     {
         ComponentGroup group;
@@ -41,6 +43,7 @@ namespace Lesson3
 
 	[UpdateInGroup(typeof(Lesson3Group_1))]
 	[UpdateAfter(typeof(ConsumptionSystem))]
+    [DisableAutoCreation]
     sealed class DestroySystem : ComponentSystem
     {
         ComponentGroup group;
@@ -70,6 +73,7 @@ namespace Lesson3
 
 #region Lesson3Group_2
 	[UpdateInGroup(typeof(Lesson3Group_2))]
+    [DisableAutoCreation]
     sealed class CountDownSystem : ComponentSystem
     {
         ComponentGroup group;
@@ -96,6 +100,7 @@ namespace Lesson3
 
 	[UpdateInGroup(typeof(Lesson3Group_2))]
 	[UpdateAfter(typeof(CountDownSystem))]
+    [DisableAutoCreation]
     sealed class SpawnSystem : ComponentSystem
     {
 		public EntityArchetype type;
@@ -131,6 +136,7 @@ namespace Lesson3
 
 
     [UpdateAfter(typeof(Lesson3Group_2))]
+    [DisableAutoCreation]
     sealed class DisplaySystem : ComponentSystem
     {
         public UnityEngine.UI.Text MessageText;

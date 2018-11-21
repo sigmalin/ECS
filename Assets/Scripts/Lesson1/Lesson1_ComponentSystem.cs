@@ -6,6 +6,7 @@ namespace Lesson1
     class Lesson1Group{}
 
     [UpdateInGroup(typeof(Lesson1Group))]
+    [DisableAutoCreation]
     sealed class CountSystem : ComponentSystem
     {
         ComponentGroup group;
@@ -34,6 +35,7 @@ namespace Lesson1
 
     [UpdateInGroup(typeof(Lesson1Group))]
     [UpdateAfter(typeof(CountSystem))]
+    [DisableAutoCreation]
     sealed class ThresholdSystem : ComponentSystem
     {
         ComponentGroup group;
@@ -64,6 +66,7 @@ namespace Lesson1
     }
 
     [UpdateAfter(typeof(Lesson1Group))]
+    [DisableAutoCreation]
     sealed class DisplaySystem : ComponentSystem
     {
         readonly UnityEngine.UI.Text countDownText;

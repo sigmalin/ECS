@@ -6,6 +6,7 @@ namespace Lesson2
     class Lesson2Group{}
 
     [UpdateInGroup(typeof(Lesson2Group))]    
+    [DisableAutoCreation]
     sealed class DisplaySystem : ComponentSystem
     {
         public UnityEngine.UI.Text MessageText;

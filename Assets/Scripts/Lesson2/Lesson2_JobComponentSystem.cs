@@ -6,6 +6,7 @@ using Unity.Collections.LowLevel.Unsafe;
 
 namespace Lesson2
 {
+	[DisableAutoCreation]
 	public class MovementSystem : JobComponentSystem
 	{
 		[BurstCompile(Accuracy.Med, Support.Relaxed)]
