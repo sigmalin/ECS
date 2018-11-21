@@ -208,7 +208,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mat: {fileID: 2100000, guid: 62e16ae3f6d27ba4e8673c499c1e1df5, type: 2}
   mat_35: {fileID: 2100000, guid: e0b5f1e27880a874f8163f4353973e80, type: 2}
-  mat_45: {fileID: 0}
+  mat_45: {fileID: 2100000, guid: bfa9d13563ebf1749b73c4baa944c61f, type: 2}
 --- !u!4 &173271993
 Transform:
   m_ObjectHideFlags: 0
